@@ -9,7 +9,11 @@ const url = require('url');
         if (url === '/intense') {
             //do some cpuintesnse action
             intensetCPURunner(60000);
+            
         }
+
+        res.setHeader('content-type', 'text/javascript');
+        res.end('done');
     }).listen(80);
 }());
 
