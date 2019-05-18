@@ -13,7 +13,7 @@ const url = require('url');
         }
 
         res.setHeader('content-type', 'text/javascript');
-        res.end('HelloWorld');
+        res.end('Hello World');
     }).listen(80);
 }());
 
